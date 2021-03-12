@@ -16,7 +16,7 @@ public class JavaTest {
     @Test
     void try_with_resources文のメリットは何か() throws IOException {
         URL url = new URL("https://cheers.glass");
-        try(InputStream in = url.openStream();){
+        try (InputStream in = url.openStream();) {
         }
     }
 
