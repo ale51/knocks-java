@@ -24,4 +24,21 @@ public class JavaTest {
     void 数字100000をもっとわかりやすく記述せよ() {
         assertThat(100_000).isEqualTo(100000);
     }
+
+    /**
+     * @Deprecatedアノテーションを付与すると、メソッド補完時に斜線が引かれる
+     */
+    @Test
+    void メソッドの非推奨化() {
+        DeprecatedClass deprecatedClass = new DeprecatedClass();
+        deprecatedClass.test();
+    }
+
+
+    static class DeprecatedClass {
+        @Deprecated
+        void test(){
+
+        }
+    }
 }
