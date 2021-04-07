@@ -13,6 +13,10 @@ repositories {
 dependencies {
     testCompile 'org.assertj:assertj-core:3.2.0'
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.4.2")
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    testCompileOnly 'org.projectlombok:lombok:1.18.20'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
 }
 
 test {
